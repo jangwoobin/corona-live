@@ -1,9 +1,4 @@
 
-.summary {
-    border: 1px solid rgb(53, 95, 209);
-    padding: 15px;
-    border-radius: 15px;
-}
 
 .summary ul {
     display: flex;
@@ -14,5 +9,5 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    
+
 }

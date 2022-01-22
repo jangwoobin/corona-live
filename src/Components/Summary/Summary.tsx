@@ -1,7 +1,9 @@
+import Box from "../Box"
 import "./style.css"
 
 const Summary = () => {
     return (
+        <Box isPadding>
         <article className="summary">
             <ul>
                 <li>
@@ -26,6 +28,7 @@ const Summary = () => {
                 </li>
                </ul>
         </article>
+        </Box>
     )
 }
 export default Summary

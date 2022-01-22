@@ -6,20 +6,12 @@ aside {
 }
 
 aside header {
-    border: 1px solid rgb(28, 148, 204);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    border-radius: 5px;
 }
 
-ul {
-    border: 1px solid rgb(22, 112, 165);
-    border-radius: 15px;
-}
-
-li {
+aside li {
     list-style: none;
     padding: 15px;
 }
