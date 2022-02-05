@@ -1,4 +1,5 @@
 import Summary from "../../Components/Summary"
+import TodaySummary from "../../TodaySummary"
 
 
 const Korea = () => {
@@ -6,7 +7,7 @@ const Korea = () => {
         <>
             korea
             <Summary/>
-        
+            <TodaySummary/>
         </>
     )
 }
