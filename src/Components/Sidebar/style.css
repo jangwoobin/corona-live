@@ -1,3 +1,4 @@
+
 aside {
     width: 250px;
     display: flex;
@@ -16,6 +17,15 @@ aside li {
     padding: 15px;
 }
 
-aside li.selected {
+aside.selected li {
     background-color: rgb(84, 82, 209);
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside li:hover {
+    background-color: rgb(216,216,216);
 }
