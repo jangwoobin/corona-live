@@ -1,45 +1,44 @@
 aside {
-    width: 250px;
-    display: flex;
-    flex-flow: column;
-    gap: 30px;
-  }
+  width: 250px;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
 
-  aside.box {
-    overflow: hidden;
-  }
-  
-  aside header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  aside header h1 {
-    font-size: 18px;
-  }
-  
-  aside header b {
-    color: #606fe4;
-  }
-  
-  aside li {
-    list-style: none;
-    padding: 15px;
-  }
-  
-  aside .selected li {
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  aside a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  aside li:hover {
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
+aside .box {
+  overflow: hidden;
+}
+
+aside header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside header h1 {
+  font-size: 18px;
+}
+
+aside header b {
+  color: #606fe4;
+}
+
+aside li {
+  list-style: none;
+  padding: 15px;
+}
+
+aside .selected li {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+aside a {
+  text-decoration: none;
+  color: black;
+}
+
+aside li:hover {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+}

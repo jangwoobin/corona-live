@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 import Box from "../Components/Box";
 import formatNumber from "../utils/formatNumber";
-
 import "./style.css";
 
 interface Props {
@@ -21,11 +20,11 @@ const TodaySummary: FunctionComponent<Props> = ({summary}) => {
         <div className="right">
           <dl>
             <dt>지역 발생</dt>
-            <dd>{formatNumber(summary?.incDecK)}명</dd>
+            <dd>{formatNumber(summary?.incDecK)}</dd>
           </dl>
           <dl>
             <dt>해외 유입</dt>
-            <dd>{formatNumber(summary?.incDecF)}명</dd>
+            <dd>{formatNumber(summary?.incDecF)}</dd> 
           </dl>
         </div>
       </article>

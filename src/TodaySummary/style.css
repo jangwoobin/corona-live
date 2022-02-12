@@ -1,5 +1,5 @@
 
-.today-summary {
+.today-summary  {
     display: flex;
 }
 
@@ -7,11 +7,11 @@
     flex: 1;
 }
 
-.today-summary .left {
+.today-summary .left dl{
     flex: 1;
     display: flex;
     flex-flow: column;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -31,4 +31,5 @@
 .today-summary .right dd {
     flex: 1;
     text-align: center;
+    margin-left: 2px;
 }

@@ -1,15 +1,20 @@
-
+    
 .summary-list table {
     width: 100%;
 }
 
 .summary-list thead th {
-    font-size: 11px;
-    color: rgb(74, 74, 180);
+    font-size:11px;
+    color: rgb(130,130,132);
     font-weight: bold;
     text-align: center;
-    
+    cursor: pointer;
 }
+
+.summary-list thead th span {
+    font-size: 18px;
+}
+
 
 .summary-list tbody tr {
     height: 40px;
@@ -17,19 +22,18 @@
 
 .summary-list tbody td {
     font-weight: bold;
-    font-size: 13px;
+    font-size:13px;
     text-align: center;
 }
 
 .summary-list tbody tr:nth-child(even) td {
-    background-color: rgb(39, 43, 56);
+    background-color: rgb(39,43,56);
     border-radius: 10px;
 }
 
-summary-list tbody td span {
+.summary-list tbody td span {
     font-size: 10px;
-    color: rgb(130, 130, 132);
+    color: rgb(130,130,132);
     margin-left: 2px;
 }
-
 
