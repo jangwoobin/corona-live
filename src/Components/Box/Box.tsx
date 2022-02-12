@@ -1,18 +1,18 @@
 import { FunctionComponent } from "react"
 import "./style.css"
 
-interface propsType {
+interface PropsType {
     isPadding?: boolean
 }
 
-const Box: FunctionComponent<propsType> = (props) => {
+const Box: FunctionComponent<PropsType> = (props) => {
     return (
         <div className="box"  style={{
             padding: props.isPadding ? '15px' : 0
         }}>
-            {props.children}
+            {props.children}           
         </div>
     )
 }
 
-export default Box  
+export default Box

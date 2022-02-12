@@ -1,6 +1,5 @@
 .box {
-    border: 1px solid rgb(48, 53, 64);
-    border-radius: 15px;
-    background-color: rgb(25, 31, 44);
-  }
-  
+  border: 1px solid rgb(48, 53, 64);
+  border-radius: 15px;
+  background-color: rgb(25, 31, 44);
+}

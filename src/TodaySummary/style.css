@@ -1,5 +1,29 @@
 
-.today-summary dl{
+.today-summary {
     display: flex;
-    justify-content: space-around;
+}
+
+.today-summary div {
+    flex: 1;
+}
+
+.today-summary .left {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.today-summary .right {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
+.today-summary .right dl {
+    flex: 1;
+    display: flex;
+    gap: 30px;
 }
