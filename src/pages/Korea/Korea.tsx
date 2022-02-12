@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import Summary from "../../Components/Summary"
 import TodaySummary from "../../TodaySummary"
 import { httpGetSummary } from "../../httpAPI";
+import SummaryList from "../../Components/SummaryList";
 
 
 const Korea = () => {
@@ -19,7 +20,8 @@ const Korea = () => {
     return (
         <>
             <Summary summary={summary}/>
-            <TodaySummary/>
+            <TodaySummary summary={summary}/>
+            <SummaryList summary={summary}/>
         </>
     )
 }

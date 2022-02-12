@@ -27,3 +27,8 @@
     display: flex;
     gap: 30px;
 }
+
+.today-summary .right dd {
+    flex: 1;
+    text-align: center;
+}

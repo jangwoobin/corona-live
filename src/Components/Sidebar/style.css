@@ -4,6 +4,10 @@ aside {
     flex-flow: column;
     gap: 30px;
   }
+
+  aside.box {
+    overflow: hidden;
+  }
   
   aside header {
     display: flex;
