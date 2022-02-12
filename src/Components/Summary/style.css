@@ -1,13 +1,21 @@
-
-
 .summary ul {
     display: flex;
     justify-content: space-around;
-}
-
-.summary ul li {
+  }
+  
+  .summary ul li {
     display: flex;
     flex-flow: column;
     align-items: center;
-
-}
+    gap: 5px;
+  }
+  
+  .summary .count {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .summary .title {
+    font-size: 13px;
+  }
+  
