@@ -11,5 +11,31 @@ interface SummaryType {
   deathPcnt: number; // 사망률
   recPcnt: number; // 완치율
 
- cities: Omit<SummaryType, 'cities'>[]
+  cities: Omit<SummaryType, 'cities'>[]
+}
+
+
+interface WorldSummaryType {
+  Global: {
+    Date: string
+    NewConfirmed:number
+    NewDeaths:number
+    NewRecovered:number
+    TotalConfirmed:number
+    TotalDeaths:number
+    TotalRecovered:number
+  }
+  Countries: {
+    Country: string
+    CountryCode: string
+    Date: string
+    ID: string
+    NewConfirmed: number
+    NewDeaths: number
+    NewRecovered: number
+    Slug: string
+    TotalConfirmed: number
+    TotalDeaths: number
+    TotalRecovered: number
+  }[]
 }

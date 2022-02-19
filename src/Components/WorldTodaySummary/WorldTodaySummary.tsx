@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react";
-import Box from "../Components/Box";
-import formatNumber from "../utils/formatNumber";
+import formatNumber from "../../utils/formatNumber";
+import Box from "../Box";
 import "./style.css";
 
 interface Props {
-  summary?: SummaryType
+  summary?: WorldSummaryType
 }
 
 const TodaySummary: FunctionComponent<Props> = ({summary}) => {
@@ -13,18 +13,18 @@ const TodaySummary: FunctionComponent<Props> = ({summary}) => {
       <article className="today-summary">
         <div className="left">
           <dl>
-            <dt>오늘 확진자</dt>
-            <dd>{formatNumber(summary?.incDec)}명</dd>
+            <dt>총 확진자</dt>
+            <dd>{formatNumber(summary?.Global.TotalConfirmed)}명</dd>
           </dl>
         </div>
         <div className="right">
           <dl>
-            <dt>지역 발생</dt>
-            <dd>{formatNumber(summary?.incDecK)}</dd>
+            <dt>오늘 확진자</dt>
+            <dd>{formatNumber(summary?.Global.NewConfirmed)}</dd>
           </dl>
           <dl>
-            <dt>해외 유입</dt>
-            <dd>{formatNumber(summary?.incDecF)}</dd> 
+            <dt>사망자</dt>
+            <dd>{formatNumber(summary?.Global.TotalDeaths)}</dd> 
           </dl>
         </div>
       </article>

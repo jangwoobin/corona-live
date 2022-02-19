@@ -1,0 +1,44 @@
+
+.today-summary  {
+    display: flex;
+}
+
+.today-summary div {
+    flex: 1;
+}
+
+.today-summary .left dl{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.today-summary .left dd {
+    color: rgb(235, 83, 116);
+    font-weight: bold;
+}
+
+.today-summary .right {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
+.today-summary .right dt {
+    width: 90px;
+    text-align: center;
+}
+
+.today-summary .right dl {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+}
+
+.today-summary .right dd {
+    flex: 1;
+    text-align: center;
+}

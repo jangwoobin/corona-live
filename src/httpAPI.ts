@@ -27,3 +27,9 @@ export const httpGetVaccineSummary = async () : Promise<VaccineSummaryType> => {
 
   return data.korea
 }
+
+export const httpGetWorldSummary = async () => {
+  const { data } = await axios.get<WorldSummaryType>('https://api.covid19api.com/summary')
+
+  return data
+}

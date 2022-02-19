@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import Summary from "../../Components/Summary"
 import SummaryList from "../../Components/SummaryList";
+import TodaySummary from "../../Components/TodaySummary"
 import { httpGetSummary } from "../../httpAPI";
-import TodaySummary from "../../TodaySummary";
 
 
 const Korea = () => {
