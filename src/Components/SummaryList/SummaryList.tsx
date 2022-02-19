@@ -1,5 +1,6 @@
 import { FunctionComponent, useCallback, useMemo, useState } from "react";
 import Box from "../Box";
+import SortArrow from "../SortArrow";
 import "./style.css"
 
 interface Props {
@@ -48,19 +49,32 @@ const SummaryList: FunctionComponent<Props> = props => {
                         <col width="50px"/>
                     </colgroup>
                     <thead>
-                        <th onClick={() => handleClickHeader('countryNm')}>지역</th>
+                        <th onClick={() => handleClickHeader('countryNm')}>지역
+                        <SortArrow
+                            sortKey="countryNm"
+                            sortOption={sortOption}
+                        /></th>
                         <th onClick={() => handleClickHeader('incDec')}>오늘 확진자
-                        {
-                            sortOption.key == 'incDec' && (
-                                <span className="material-icons">
-                                    {sortOption.order == 'asc' ? 'arrow_upward' : 'arrow_downward'}
-                                </span>
-                            )
-                        }
+                        <SortArrow
+                            sortKey="incDec"
+                            sortOption={sortOption}
+                        />
                         </th>
-                        <th onClick={() => handleClickHeader('totalCnt')}>총 확진자</th>
-                        <th onClick={() => handleClickHeader('deathCnt')}>사망자</th>
-                        <th onClick={() => handleClickHeader('recCnt')}>완치자</th>
+                        <th onClick={() => handleClickHeader('totalCnt')}>총 확진자
+                        <SortArrow
+                            sortKey="totalCnt"
+                            sortOption={sortOption}
+                        /></th>
+                        <th onClick={() => handleClickHeader('deathCnt')}>사망자
+                        <SortArrow
+                            sortKey="deathCnt"
+                            sortOption={sortOption}
+                        /></th>
+                        <th onClick={() => handleClickHeader('recCnt')}>완치자
+                        <SortArrow
+                            sortKey="recCnt"
+                            sortOption={sortOption}
+                        /></th>
                     </thead>
                     <tbody>
                         {sortedCities.map(city => {                            
