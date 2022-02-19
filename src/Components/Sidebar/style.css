@@ -23,22 +23,22 @@ aside header b {
   color: #606fe4;
 }
 
-aside li {
+aside nav li {
   list-style: none;
   padding: 15px;
 }
 
-aside .selected li {
+aside nav .selected li {
   font-weight: bold;
   background: rgba(255, 255, 255, 0.1);
 }
 
-aside a {
+aside nav a {
   text-decoration: none;
   color: black;
 }
 
-aside li:hover {
+aside nav li:hover {
   font-weight: bold;
   background: rgba(255, 255, 255, 0.1);
 }
