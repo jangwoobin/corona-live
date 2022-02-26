@@ -1,0 +1,41 @@
+article.vaccine-info ul {
+    display: flex;
+    margin: 5px;
+    background-color: rgb(39, 43, 56);
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  
+  article.vaccine-info li {
+    list-style: none;
+    flex: 1;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  article.vaccine-info li.selected {
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid rgb(100, 100, 100);
+  }
+  
+  article.vaccine-info .vaccine-data {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding-left: 15px;
+  }
+  
+  article.vaccine-info .vaccine-data dl {
+    display: flex;
+  }
+  
+  article.vaccine-info .vaccine-data dt {
+    width: 90px;
+    color: rgb(130, 130, 132);
+  }
+  

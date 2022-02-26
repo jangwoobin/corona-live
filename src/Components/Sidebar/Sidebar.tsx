@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import Box from "../Box";
-import VaccineSummary from "../VaccineSummary";
-import "./style.css";
+import { NavLink } from 'react-router-dom';
+import Box from '../Box';
+import VaccineSummary from '../VaccineSummary';
+import './style.css';
 
 const Sidebar = () => {
   return (
@@ -15,26 +15,31 @@ const Sidebar = () => {
       </Box>
       <Box>
         <nav>
-        <ul>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "selected" : "")}
-          >
-            <li>국내</li>
-          </NavLink>
-          <NavLink
-            to="/world"
-            className={({ isActive }) => (isActive ? "selected" : "")}
-          >
-            <li>해외</li>
-          </NavLink>
-        </ul>
+          <ul>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? 'selected' : '')}
+            >
+              <li>국내</li>
+            </NavLink>
+            <NavLink
+              to="/world"
+              className={({ isActive }) => (isActive ? 'selected' : '')}
+            >
+              <li>해외</li>
+            </NavLink>
+            <NavLink
+              to="/vaccine"
+              className={({ isActive }) => (isActive ? 'selected' : '')}
+            >
+              <li>백신</li>
+            </NavLink>
+          </ul>
         </nav>
       </Box>
-      <Box isPadding>
+      {/* <Box isPadding>
         <VaccineSummary/>
-
-      </Box>
+      </Box> */}
     </aside>
   );
 };

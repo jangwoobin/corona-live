@@ -1,0 +1,48 @@
+export default {
+    Pfizer: {
+      name: '화이자',
+      country: '미국/독일',
+      volume: '6,749만회 분',
+      count: '2회',
+      interval: '21일',
+      keep: '-90℃ ~ -60℃ (6개월)',
+      distribution: '2~8℃ (5일)',
+    },
+    Moderna: {
+      name: '모더나',
+      country: '미국',
+      volume: '2,597만회 분',
+      count: '2회',
+      interval: '28일',
+      keep: '-25℃ ~ -15℃ (7개월)',
+      distribution: '2~8℃ (30일)',
+    },
+    Janssen: {
+      name: '얀센',
+      country: '미국',
+      volume: '292만회 분',
+      count: '1회 * (임상결과에 따라 변경가능)',
+      interval: '-',
+      keep: '-25℃ ~ -15℃ (4개월)',
+      distribution: '2~8℃ (4.5일)',
+    },
+    AZ: {
+      name: 'AZ',
+      country: '영국',
+      volume: '2,000만회 분',
+      count: '2회',
+      interval: '8~12주',
+      keep: '-2℃ ~ -8℃ (6개월)',
+      distribution: '2~8℃ (6개월)',
+    },
+    Novavax: {
+      name: '노바백스',
+      country: '미국',
+      volume: '4000만회 분',
+      count: '2회',
+      interval: '21일',
+      keep: '-2℃ ~ -8℃ (5개월)',
+      distribution: '2~8℃ (5개월)',
+    },
+  };
+  
