@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Sidebar />
       <section>
+        {/* 라우터 설정 /:path 브라우저 path에 따라 변경되는 페이지*/}
         <Routes>
           <Route path="/" element={<Korea />} />
           <Route path="/world" element={<World />} />
